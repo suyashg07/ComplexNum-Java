@@ -223,7 +223,8 @@ public class ComplexNum {
     }
 
     /*
-     * 
+     * The next 8 methods are all multiplication methods which can multiply two 
+     * complex numbers of either format or a complex number and a real number
      */
 
     public static ComplexNum DivideC(ComplexNum a, ComplexNum b) {
