@@ -223,7 +223,7 @@ public class ComplexNum {
     }
 
     /*
-     * The next 8 methods are all multiplication methods which can multiply two 
+     * The next 8 methods are all division methods which can divide two 
      * complex numbers of either format or a complex number and a real number
      */
 
