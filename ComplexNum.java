@@ -19,17 +19,29 @@ public class ComplexNum {
     @Override
     public String toString() {
         if (imag() < 0) {
-            return "" + real() + " - " + (-1*imag()) + "i"; 
+            return "" + Real + " - " + (-Imag) + "i"; 
         }
-        return "" + real() + " + " + imag() + "i";
+        return "" + Real + " + " + Imag + "i";
     }
 
     public ComplexNum conjugate() {
-        return new ComplexNum(real(), -1.0*imag());
+        return new ComplexNum(Real, -Imag);
     }
 
     public double mag() {
-        return Math.pow(Math.pow(real(), 2) + Math.pow(imag(), 2), 0.5);
+        if (Real == 0) {
+            if (Imag < 0) {
+                return -Imag;
+            }
+            return Imag;
+        }
+        if (Imag == 0) {
+            if (Real < 0) {
+                return -Real;
+            }
+            return Real;
+        }
+        return Math.pow(Math.pow(Real, 2) + Math.pow(Imag, 2), 0.5);
     }
 
     public double phase() {
